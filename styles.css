@@ -1,0 +1,98 @@
+* {
+  font-family: Georgia;
+}
+
+.Head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "Title Title"
+    "Nav1 Nav2"
+    "Nav3 Nav4";
+  gap: 5px;
+  text-align: center;
+}
+
+.Body{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Element {
+  border: 0.75rem solid;
+  border-radius: 10px;
+  border-color: #be84b2;
+  background-color: #f8c8dc;
+  margin: 5px;
+}
+
+.Title {
+  grid-area: Title;
+}
+
+.Nav1:hover {
+  grid-area: Nav1;
+  background-color: #be84b2;
+}
+
+.Nav2:hover {
+  grid-area: Nav2;
+  background-color: #be84b2;
+}
+
+.Nav3:hover {
+  grid-area: Nav3;
+  background-color: #be84b2;
+}
+
+.Nav4:hover {
+  grid-area: Nav4;
+  background-color: #be84b2;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.Card {
+  width: 333px;
+  height: 75px;
+  align-items: center;
+}
+
+.cardFront {
+  background-color: #f8c8dc;
+}
+
+.cardBack {
+  background-color: #f8c8dc;
+  display: none;
+}
+
+.Card.showAnswer .cardFront {
+  background-color: #f8c8dc;
+  display: none;
+}
+
+.Card.showAnswer .cardBack {
+  background-color: #f8c8dc;
+  display: block;
+}
+
+.darkMode {
+  background-color: black;
+}
+
+.darkMode .Element {
+  background-color: #be84b2;
+  border-color: #b266b2;
+}
+
+.darkMode .highlight {
+  background-color: #ff00ff;
+}
+
+.darkMode .cardFront .cardBack {
+  background-color: #be84b2;
+}

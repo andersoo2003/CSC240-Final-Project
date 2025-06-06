@@ -1,0 +1,119 @@
+<head>
+  <link rel = "stylesheet" href = "styles.css">
+</head>
+
+<header>
+  <div class = "Element">
+    <p id = "Clock"></p>
+    <p>Select the color that you want the text to be:</p>
+    <input type = "text" id = "colorPicker">
+    <button id = "colorButton">Submit</button>
+    <button id = "darkMode" class = "darkMode" style = "background-color: white;">Toggle Darkmode</button>
+  </div>
+  <div class = "Head">
+    <h1 class = "Element Title">How Brachytherapy Works</h1>
+    <a class = "Element Nav1" href = "index.html">Home</a>
+    <a class = "Element Nav2" href = "Info_Page.html">How it Works</a>
+    <a class = "Element Nav3" href = "Flip_Cards_Page.html">Flashcards</a>
+    <a class = "Element Nav4" href = "Sources.html">Sources</a>
+  </div>
+</header>
+
+<p></p>
+
+<body>
+  <div class = "Body">
+    <div class = "Element">
+      <h2>The Physics</h2>
+      <p>
+        The seeds that are implemented into the patient, either by ingestion, implantation, or insertion, are actually <button class = "highlight">radioisotopes</button>. The Curies found the first radioisotope to be used in medicine (Ra226) in 1898 and due to radium’s scarcity, there was great demand for the isotope. While radium is one of three naturally occurring <button class = "highlight">radioactive series</button>, there are over 1000 artificially made isotopes which were created by elements interacting with different <button class = "highlight">high energy particles</button>. The decay in these radioisotopes is caused by a high number of <button class = "highlight">nucleons</button> within an atom being pushed away from each other due to high <button class = "highlight">Coulomb forces</button>, emitting particles and causing the phenomenon known as decay. Decay can occur in four different types:
+      </p>
+      <ul>
+        <li>
+          Alpha decay is the emission of alpha particles
+        </li>
+        <li>
+          Beta decay is the emission of either a negatron (negatively charged electron) or a positron (positively charged electron) 
+        </li>
+        <li>
+          Gamma decay is the emission of a photon
+        </li>
+        <li>
+          Positron decay is the splitting of a nucleus into a neutron, positron, and a neutrino
+        </li>
+      </ul>
+
+      <p>
+        Quiz time! Quarks are another type of subamtomic partcle that make up protons. So, the types of radiactive decay they are most likely to emitt is (look at the image):
+      </p>
+      <ul>
+        <li>
+          <button id = "correctAnswer1">Alpha decay</button>
+        </li>
+        <li>
+          <button id = "incorrectAnswer11">Beta decay</button>
+        </li>
+        <li>
+          <button id = "incorrectAnswer12">Gamma decay</button>
+        </li>
+        <li>
+          <button id = "incorrectAnswer13">Positron decay</button>
+        </li>
+      </ul>
+      <p id= "quizOutput1"></p>
+
+      <div class = "dropdown">
+        <button class = "showDropdown">More information on different types of brachytherapy</button>
+        <p class = "extraInfo" id = "infopageExtra">
+        </p>
+      </div>
+    </div>
+    <p class = "Element">
+      <img class = "Image" src = "https://www.researchgate.net/publication/372497551/figure/fig1/AS:11431281175912451@1689941718287/Types-of-radioactive-decays.png" alt = "A visual representation of radioactive decay" width = 350>
+    </p>
+    <div class = "Element">
+      <h2>
+        What Type of Radioisotope do you Use?
+      </h2>
+      <p>
+        In the case of prostate cancer, there are three isotopes that are commonly used: iodine-125, palladium-103, and cesium-131, each with their own <button class = "highlight">half-lives</button> and average energies. While there are a wide variety of reasons to use alternative isotopes (i.e., allergies), there are more advantages to choosing an isotope with a shorter half-life:
+      </p>
+      <ul>
+        <li>
+          Less time exposed to radiation.
+        </li>
+        <li>
+          The body can resolve many symptoms without the need for medical intervention.
+        </li>
+      </ul>
+      <p></p>
+        Recent data suggests that palladium isotopes are superior to iodine (both of which have short half-lives) because they may have higher cure rates. These higher cure rates could be due to palladium having a lower average energy which results in a higher number of seeds needing to be placed.
+      </p>
+      <p>
+        Want to calculate the amount of decay that occured over a period of time for palladium 103? Simply enter a number below and i'll output the amount of activivy in Curies
+      </p>
+      <input type = "number" id = "calcInput">
+      <button id = "calcButton">
+        Submit
+      </button>
+      <p id= "calcOutput"></p>
+      <p>
+        Quiz time! Iodine-125 has a half-life of 60 days, palladium-103 has a half-life of 17 days, and cesium-131 has a half life of about 10 days. Based purley off this information, what isotope would be the best candidate for brachytherapy seeds.
+      </p>
+      <ul>
+        <li>
+          <button id = "incorrectAnswer21">Iodine-125</button>
+        </li>
+        <li>
+          <button id = "correctAnswer2">Cesium-131</button>
+        </li>
+        <li>
+          <button id = "incorrectAnswer22">Palladium-103</button>
+        </li>
+      </ul>
+      <p id= "quizOutput2"></p>
+    </div>
+  </div>
+  <button class = "Element" id = "topOfPage">Click here to got to the top of the page</button>
+  <script src="script.js"></script>
+</body>
