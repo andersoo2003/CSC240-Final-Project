@@ -19,6 +19,29 @@
   align-items: center;
 }
 
+/* If screen is less than 600 pixels wide, put all page elements in a column */
+/* @media from https://www.w3schools.com/cssref/atrule_media.php */
+@media screen and (max-width: 600px) {
+  .Head {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "Title"
+    "Nav1" 
+    "Nav2"
+    "Nav3" 
+    "Nav4";
+  gap: 5px;
+  text-align: center;
+  }
+
+  .Body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .Element {
   border: 0.75rem solid;
   border-radius: 10px;
@@ -57,7 +80,7 @@
 
 .Card {
   width: 333px;
-  height: 75px;
+  height: 125px;
   align-items: center;
 }
 
