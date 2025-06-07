@@ -1,105 +1,107 @@
-<head>
-    <link rel = "stylesheet" href = "styles.css">
-    <meta name = ”viewport” content = ”width = device-width”, ” initial-scale = 1”>
-</head>
-  
-<header>
-    <div class = "Element">
-        <p id = "Clock"></p>
-        <p>Select the color that you want the text to be:</p>
-        <input type = "text" id = "colorPicker">
-        <button id = "colorButton">Submit</button>
-        <button id = "darkMode" class = "darkMode" style = "background-color: white;">Toggle Darkmode</button>
-      </div>
-    <div class = "Head">
-        <h1 class = "Element Title">Flascards (Click on Each Question to Reveal the Answer)</h1>
-        <a class = "Element Nav1" href = "index.html">Home</a>
-        <a class = "Element Nav2" href = "Info_Page.html">How it Works</a>
-        <a class = "Element Nav3" href = "Flip_Cards_Page.html">Flashcards</a>
-        <a class = "Element Nav4" href = "Sources.html">Sources</a>
-    </div>
-</header>
-  
-<p></p>
+<!DOCTYPE html>
+    <head>
+        <link rel = "stylesheet" href = "styles.css">
+        <meta name = ”viewport” content = ”width = device-width”, ” initial-scale = 1”>
+    </head>
+    
+    <header>
+        <div class = "Element">
+            <p id = "Clock"></p>
+            <p>Select the color that you want the text to be:</p>
+            <input type = "text" id = "colorPicker">
+            <button id = "colorButton">Submit</button>
+            <button id = "darkMode" class = "darkMode" style = "background-color: white;">Toggle Darkmode</button>
+        </div>
+        <div class = "Head">
+            <h1 class = "Element Title">Flascards (Click on Each Question to Reveal the Answer)</h1>
+            <a class = "Element Nav1" href = "index.html">Home</a>
+            <a class = "Element Nav2" href = "Info_Page.html">How it Works</a>
+            <a class = "Element Nav3" href = "Flip_Cards_Page.html">Flashcards</a>
+            <a class = "Element Nav4" href = "Sources.html">Sources</a>
+        </div>
+    </header>
+    
+    <p></p>
 
-<body>
-    <div class = "Body">
-        <div class = "Element Card">
-            <div class = "cardInner">
-                <p class = "cardFront">Brachytherapy is popular because of its ability to bypass...</p>
-                <p class = "cardBack">Superficial tissue</p>
+    <body>
+        <div class = "Body">
+            <div class = "Element Card">
+                <div class = "cardInner">
+                    <p class = "cardFront">Brachytherapy is popular because of its ability to bypass...</p>
+                    <p class = "cardBack">Superficial tissue</p>
+                </div>
+            </div>
+
+            <div class = "Element Card">
+                <div class = "cardInner">
+                    <p class = "cardFront">Who found the first radioisotope to be used in medicine?</p>
+                    <p class = "cardBack">The Curies</p>
+                </div>
+            </div>
+
+            <div class = "Element Card">
+                <div class = "cardInner">
+                    <p class = "cardFront">The emission of photons is called...</p>
+                    <p class = "cardBack">Gamma decay</p>
+                </div>
+            </div>
+
+            <div class = "Element Card">
+                <div class = "cardInner">
+                    <p class = "cardFront">What is the most popular isotope used in brachytherapy treatment?</p>
+                    <p class = "cardBack">Palladium 103</p>
+                </div>
+            </div>
+
+            <div class = "Element Card">
+                <div class = "cardInner">
+                    <p class = "cardFront">What are the three ways brachytherapy seeds can be implemented into a patient?</p>
+                    <p class = "cardBack">Ingestion, implantation, or insertion</p>
+                </div>
+            </div>
+
+            <div class = "Element Card">
+                <div class = "cardInner">
+                    <p class = "cardFront">What is the unit used to calculate decay?</p>
+                    <p class = "cardBack">Curies</p>
+                </div>
+            </div>
+
+            <div class = "Element Card">
+                <div class = "cardInner">
+                    <p class = "cardFront">Cancer is a __________ disease</p>
+                    <p class = "cardBack">Genetic</p>
+                </div>
+            </div>
+
+            <div class = "Element Card">
+                <div class = "cardInner">
+                    <p class = "cardFront">The most common brachytherapy treatment is...</p>
+                    <p class = "cardBack">Low-dose rate (LDR) brachytherapy</p>
+                </div>
             </div>
         </div>
-
-        <div class = "Element Card">
-            <div class = "cardInner">
-                <p class = "cardFront">Who found the first radioisotope to be used in medicine?</p>
-                <p class = "cardBack">The Curies</p>
-            </div>
+        <div class = "Element">
+            <p>
+                Quiz time! Since brachytherapy can only target tumors, which of the following cancers cannot be treated with brachytherapy?
+            </p>
+            <ul>
+                <li>
+                <button id = "incorrectAnswer31">Breast cancer</button>
+                </li>
+                <li>
+                <button id = "incorrectAnswer32">Prostate cancer</button>
+                </li>
+                <li>
+                <button id = "incorrectAnswer33">Skin cancer</button>
+                </li>
+                <li>
+                    <button id = "correctAnswer3">Leukemia</button>
+                </li>
+            </ul>
+            <p id= "quizOutput3"></p>
         </div>
-
-        <div class = "Element Card">
-            <div class = "cardInner">
-                <p class = "cardFront">The emission of photons is called...</p>
-                <p class = "cardBack">Gamma decay</p>
-            </div>
-        </div>
-
-        <div class = "Element Card">
-            <div class = "cardInner">
-                <p class = "cardFront">What is the most popular isotope used in brachytherapy treatment?</p>
-                <p class = "cardBack">Palladium 103</p>
-            </div>
-        </div>
-
-        <div class = "Element Card">
-            <div class = "cardInner">
-                <p class = "cardFront">What are the three ways brachytherapy seeds can be implemented into a patient?</p>
-                <p class = "cardBack">Ingestion, implantation, or insertion</p>
-            </div>
-        </div>
-
-        <div class = "Element Card">
-            <div class = "cardInner">
-                <p class = "cardFront">What is the unit used to calculate decay?</p>
-                <p class = "cardBack">Curies</p>
-            </div>
-        </div>
-
-        <div class = "Element Card">
-            <div class = "cardInner">
-                <p class = "cardFront">Cancer is a __________ disease</p>
-                <p class = "cardBack">Genetic</p>
-            </div>
-        </div>
-
-        <div class = "Element Card">
-            <div class = "cardInner">
-                <p class = "cardFront">The most common brachytherapy treatment is...</p>
-                <p class = "cardBack">Low-dose rate (LDR) brachytherapy</p>
-            </div>
-        </div>
-    </div>
-    <div class = "Element">
-        <p>
-            Quiz time! Since brachytherapy can only target tumors, which of the following cancers cannot be treated with brachytherapy?
-        </p>
-        <ul>
-            <li>
-              <button id = "incorrectAnswer31">Breast cancer</button>
-            </li>
-            <li>
-              <button id = "incorrectAnswer32">Prostate cancer</button>
-            </li>
-            <li>
-              <button id = "incorrectAnswer33">Skin cancer</button>
-            </li>
-            <li>
-                <button id = "correctAnswer3">Leukemia</button>
-              </li>
-        </ul>
-        <p id= "quizOutput3"></p>
-    </div>
-    <button class = "Element" id = "topOfPage">Click here to got to the top of the page</button>
-    <script src="script.js"></script>
-</body>
+        <button class = "Element" id = "topOfPage">Click here to got to the top of the page</button>
+        <script src="script.js"></script>
+    </body>
+</html>

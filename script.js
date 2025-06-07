@@ -4,8 +4,18 @@ var submission = document.getElementById("submitButton");
 if (submission) {
     submission.addEventListener("click", async function() {
         document.getElementById("submitOutput").innerText = "Thank you for the question!";
-        var currEmail = document.getElementById("emailInput");
-        var currQuestion = document.getElementById("questionInput");
+        var currEmail = document.getElementById("emailInput").value;
+        var currQuestion = document.getElementById("questionInput").value;
+        // Make sure elements are not empty
+        if (currEmail == "" || !currEmail.includes("@")) {
+            document.getElementById("submitOutput").innerText = "Please enter a valid email.";
+        }
+        else if (currQuestion == "") {
+            document.getElementById("submitOutput").innerText = "Please eneter a valid question.";
+        }
+        else {
+            document.getElementById("submitOutput").innerText = "Thank you for the question!";
+        }
     });
 }
 
