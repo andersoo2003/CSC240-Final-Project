@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-/* If screen is less than 600 pixels wide, put all page elements in a column */
+/* If screen is less than 1300 pixels wide, put all page elements in a column */
 /* @media from https://www.w3schools.com/cssref/atrule_media.php */
 @media screen and (max-width: 1300px) {
   .Head {
